@@ -1,7 +1,7 @@
 declare namespace org {
-    namespace chox {
-        namespace util {
-            class BufferReader {
+    namespace chickenbox {
+        namespace buffer {
+            class Reader {
                 private readonly buffer;
                 private dataView;
                 private offset;
@@ -15,16 +15,16 @@ declare namespace org {
                 readonly float64: number;
                 readonly bool: boolean;
                 readonly bytes: ArrayBuffer;
-                readonly string: any;
-                readonly tinyString: any;
+                readonly string: string;
+                readonly tinyString: string;
             }
         }
     }
 }
 declare namespace org {
-    namespace chox {
-        namespace util {
-            class BufferedWriter {
+    namespace chickenbox {
+        namespace buffer {
+            class Writer {
                 private _buffer;
                 private dataView;
                 private _offset;

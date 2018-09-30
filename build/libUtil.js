@@ -1,11 +1,11 @@
 "use strict";
 var org;
 (function (org) {
-    let chox;
-    (function (chox) {
-        let util;
-        (function (util) {
-            class BufferReader {
+    let chickenbox;
+    (function (chickenbox) {
+        let buffer;
+        (function (buffer_1) {
+            class Reader {
                 constructor(buffer, stringEncoding = "utf-8") {
                     this.buffer = buffer;
                     this.offset = 0;
@@ -66,17 +66,17 @@ var org;
                     return s;
                 }
             }
-            util.BufferReader = BufferReader;
-        })(util = chox.util || (chox.util = {}));
-    })(chox = org.chox || (org.chox = {}));
+            buffer_1.Reader = Reader;
+        })(buffer = chickenbox.buffer || (chickenbox.buffer = {}));
+    })(chickenbox = org.chickenbox || (org.chickenbox = {}));
 })(org || (org = {}));
 var org;
 (function (org) {
-    let chox;
-    (function (chox) {
-        let util;
-        (function (util) {
-            class BufferedWriter {
+    let chickenbox;
+    (function (chickenbox) {
+        let buffer;
+        (function (buffer) {
+            class Writer {
                 constructor(initialBufferSize = 1, stringEncoding = "utf-8") {
                     this._offset = 0;
                     this._buffer = new ArrayBuffer(initialBufferSize);
@@ -160,7 +160,7 @@ var org;
                     this.writeBytes(this.textEncoder.encode(s));
                 }
             }
-            util.BufferedWriter = BufferedWriter;
-        })(util = chox.util || (chox.util = {}));
-    })(chox = org.chox || (org.chox = {}));
+            buffer.Writer = Writer;
+        })(buffer = chickenbox.buffer || (chickenbox.buffer = {}));
+    })(chickenbox = org.chickenbox || (org.chickenbox = {}));
 })(org || (org = {}));

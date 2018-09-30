@@ -1,8 +1,8 @@
 namespace org {
-    export namespace chox {
-        export namespace util {
+    export namespace chickenbox {
+        export namespace buffer {
 
-            export class BufferedWriter {
+            export class Writer {
                 private _buffer: ArrayBuffer
                 private dataView: DataView
                 private _offset = 0

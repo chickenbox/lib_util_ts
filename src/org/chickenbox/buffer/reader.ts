@@ -1,8 +1,8 @@
 namespace org {
-    export namespace chox {
-        export namespace util {
+    export namespace chickenbox {
+        export namespace buffer {
 
-            export class BufferReader {
+            export class Reader {
                 private dataView: DataView
                 private offset = 0
                 private textDecoder: TextDecoder
