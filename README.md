@@ -1,20 +1,22 @@
 # Lib Util TS
-> Short blurb about what your product does.
+> utility functions.
 
 Provide utility functions.
 
 ## Installation
 
-OS X & Linux:
+Run:
 
 ```sh
-bower install https://github.com/lamylanmc/lib_util_ts.git --save
+bower install https://github.com/chickenbox/lib_util_ts.git --save
 ```
 
 ## Usage example
 
 Import script in html file:
+```sh
 <script src="../bower_components/lib_util_ts/build/libUtil.min.js"></script>
+```
 
 
 ## Development setup
@@ -22,14 +24,16 @@ Import script in html file:
 Require typescript plus to build this project. Your may get is here:
 https://www.npmjs.com/package/typescript-plus
 
+Run
+
 ```sh
 build.bat
 ```
 
 ## Release History
 
-* 0.0.2
-    * Work in progress
+* 1.0.1
+    * First Release
 
 ## Meta
 
